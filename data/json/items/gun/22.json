@@ -112,50 +112,6 @@
     "melee_damage": { "bash": 12 }
   },
   {
-    "id": "moss_brownie",
-    "looks_like": "glock_17",
-    "copy-from": "pistol_base",
-    "type": "GUN",
-    "name": { "str": ".22 derringer pistol" },
-    "description": "A four barreled, adorably tiny pocket pistol, firing the equally minuscule .22 LR cartridge.  Produced in the early 20th century for trappers, its combat effectiveness is questionable to say the least.",
-    "variant_type": "gun",
-    "variants": [
-      {
-        "id": "moss_brownie",
-        "name": { "str": "Mossberg Brownie pistol" },
-        "description": "The first gun produced by O.F. Mossberg & Sons, the Brownie is a small pocket pistol marketed to trappers during the early 20th century.  Its four barrels can accept .22 Short and .22 LR cartridges."
-      }
-    ],
-    "weight": "286 g",
-    "volume": "100 ml",
-    "longest_side": "129 mm",
-    "barrel_length": "64 mm",
-    "price": "1 kUSD 100 USD",
-    "price_postapoc": "5 USD",
-    "to_hit": -1,
-    "material": [ "steel", "wood" ],
-    "color": "dark_gray",
-    "ammo": [ "22" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": -2 },
-    "dispersion": 520,
-    "durability": 6,
-    "blackpowder_tolerance": 96,
-    "clip_size": 4,
-    "valid_mod_locations": [
-      [ "barrel", 1 ],
-      [ "belt clip", 1 ],
-      [ "grip", 1 ],
-      [ "mechanism", 2 ],
-      [ "sights mount", 1 ],
-      [ "stock mount", 1 ],
-      [ "underbarrel mount", 1 ]
-    ],
-    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
-    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT", "EASY_CLEAN" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "22": 4 } } ],
-    "melee_damage": { "bash": 1 }
-  },
-  {
     "id": "rifle_22",
     "looks_like": "ar15",
     "type": "GUN",
@@ -451,5 +407,46 @@
     "weapon_category": [ "AUTOMATIC_PISTOLS" ],
     "pocket_data": [ { "magazine_well": "126 ml", "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "wp22mag" ] } ],
     "melee_damage": { "bash": 4 }
+  },
+  {
+    "id": "cp33",
+    "copy-from": "pistol_base",
+    "looks_like": "ar_pistol",
+    "type": "GUN",
+    "name": { "str": "high capacity handgun" },
+    "description": "A large capacity handgun, chambered in .22 and feeding from quad stack magazines.  Used both recreationally and in competition.",
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "cp33",
+        "name": { "str": "CP33" },
+        "description": "The Kel-Tec CP33, standing for Competition Pistol 33, is a .22 semi automatic pistol targeted towards competition shooters and recreational shooters alike, with the ability to feed from 33 round quad stack magazines, or even 50 with an extension.  While in a fairly weak cartridge, the capacity makes it quite a formidable weapon in the right hands."
+      }
+    ],
+    "weight": "669 g",
+    "volume": "525 ml",
+    "price": "495 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -2,
+    "longest_side": "273 mm",
+    "barrel_length": "140 mm",
+    "material": [ "steel", "plastic", "aluminum" ],
+    "symbol": "(",
+    "color": "light_gray",
+    "ammo": [ "22" ],
+    "dispersion": 480,
+    "durability": 6,
+    "min_cycle_recoil": 100,
+    "flags": [ "ALLOWS_BODY_BLOCK" ],
+    "weapon_category": [ "AUTOMATIC_PISTOLS" ],
+    "pocket_data": [
+      {
+        "rigid": false,
+        "magazine_well": "123 ml",
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "cp33_mag", "cp33_mag_50" ]
+      }
+    ],
+    "melee_damage": { "bash": 7 }
   }
 ]

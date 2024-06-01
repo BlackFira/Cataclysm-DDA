@@ -180,7 +180,7 @@
       [ "hptjcpmag", 2 ],
       [ "hptjhpmag", 2 ],
       [ "witness_mag_10", 2 ],
-      [ "cz75mag_12rd", 9 ],
+      [ "cz75mag_16rd", 9 ],
       [ "cz75mag_20rd", 5 ],
       [ "cz75mag_26rd", 2 ],
       [ "ccpmag", 4 ],
@@ -188,7 +188,9 @@
       [ "xd_10_mag", 1 ],
       [ "ruger_57mag", 10 ],
       [ "ruger_57_10_round_mag", 10 ],
-      [ "wp22mag", 7 ]
+      [ "wp22mag", 7 ],
+      [ "cp33_mag", 4 ],
+      [ "cp33_mag_50", 1 ]
     ]
   },
   {
